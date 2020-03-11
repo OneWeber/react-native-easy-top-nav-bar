@@ -31,10 +31,11 @@ export default class App extends Component{
   render(){
     return(
         <RNEasyTopNavBar
-            title={'标题'}
+            title={'标题标题标题标题标题标题标题标题标题标题标题'}
             backgroundTheme={'#008489'}
             leftButton={this.getLeftButton()}
             rightButton={this.getRightButton()}
+            ellipsizeModeType={'tail'}
         />
     )
   }
