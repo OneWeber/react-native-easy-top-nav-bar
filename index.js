@@ -14,6 +14,8 @@ export default class RNEasyTopNavBar extends Component{
         titleColor: PropTypes.string,
         backgroundTheme: PropTypes.string,
         ellipsizeModeType: PropTypes.string,
+        titleDialog: PropTypes.element,
+        titleView: PropTypes.element
     }
     static defaultProps = {
         titleColor: '#fff',
