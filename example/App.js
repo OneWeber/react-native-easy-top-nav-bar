@@ -19,19 +19,19 @@ import RNEasyTopNavBar from 'react-native-easy-top-nav-bar';
 
 export default class App extends Component{
   getLeftButton() {
-    return <View>
-      <Text style={{color: '#fff'}}>返回</Text>
+    return <View style={{paddingLeft: 10}}>
+      <Text style={{color: '#fff'}}>back</Text>
     </View>
   }
   getRightButton() {
-    return <View>
-      <Text style={{color: '#fff'}}>筛选</Text>
+    return <View style={{paddingRight: 10}}>
+      <Text style={{color: '#fff'}}>more</Text>
     </View>
   }
   render(){
     return(
         <RNEasyTopNavBar
-            title={'标题标题标题标题标题标题标题标题标题标题标题'}
+            title={'this is title'}
             backgroundTheme={'#008489'}
             leftButton={this.getLeftButton()}
             rightButton={this.getRightButton()}
