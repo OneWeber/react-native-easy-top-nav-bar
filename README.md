@@ -43,6 +43,6 @@ import RNEasyTopNavBar from 'react-native-easy-top-nav-bar';
 RNEasyTopNavBar;
 
 
-## Props
+
 
 
