@@ -43,7 +43,6 @@ import RNEasyTopNavBar from 'react-native-easy-top-nav-bar';
 RNEasyTopNavBar;
 
 
-eg: "_________" 左右两边到":"决定文字到对齐方式
-| Property         |  Default         | Description
+## Props
 
 
