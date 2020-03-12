@@ -84,6 +84,8 @@ ellipsizeModeType | "head" | The omission of words,including "tail","clip","head
 leftButton | | Navigation custom left area content
 rightButton| | Navigation custom right area content
 style| | Custom style
+titleDialog | | Custom dialog
+titleView | | It triggers the text area of the pop-up, and when it's passed into the titleview, the title is disabled
 
 
 ## Usage
