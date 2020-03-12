@@ -1,6 +1,8 @@
 
 # react-native-easy-top-nav-bar
 
+
+
 ## Getting started
 
 `$ npm install react-native-easy-top-nav-bar --save`
@@ -33,6 +35,54 @@
   	```
       compile project(':react-native-easy-top-nav-bar')
   	```
+    
+## Show some message    
+  ```js
+  import React, {Component} from 'react';
+  import {
+    View,
+    Text,
+  } from 'react-native';
+  import RNEasyTopNavBar from 'react-native-easy-top-nav-bar';
+  class EasyBar extend Component{
+  getLeftButton() {
+    return <View>
+      <Text style={{color: '#fff'}}>back</Text>
+    </View>
+  }
+  getRightButton() {
+    return <View>
+      <Text style={{color: '#fff'}}>more</Text>
+    </View>
+  }
+    render() {
+      return(
+        <View style={{flex: 1}}>
+           <RNEasyTopNavBar
+            title={'this is title'}
+            backgroundTheme={'#008489'}
+            leftButton={this.getLeftButton()}
+            rightButton={this.getRightButton()}
+            ellipsizeModeType={'tail'}
+        />
+        </View>
+      )
+    }
+  }
+```  
+    
+    
+## Props
+
+Property | Default | Description
+--------- | ------------- | ------------
+title | "" | Navigation title
+titleColor | "#fff" | Color of title
+backgroundTheme | "#999" | The dominant color of the navigation
+ellipsizeModeType | "head" | The omission of words,including "tail","clip","head","middle"
+leftButton | | Navigation custom left area content
+rightButton| | Navigation custom right area content
+style| | Custom style
 
 
 ## Usage
@@ -41,5 +91,6 @@ import RNEasyTopNavBar from 'react-native-easy-top-nav-bar';
 
 // TODO: What to do with the module?
 RNEasyTopNavBar;
-```
-  
+
+
+
