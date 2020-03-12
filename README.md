@@ -33,6 +33,17 @@
   	```
       compile project(':react-native-easy-top-nav-bar')
   	```
+## Props
+
+Property | Default | Description
+--------- | ------------- | ------------
+title | "" | Navigation title
+titleColor | "#fff" | Color of title
+backgroundTheme | "#999" | The dominant color of the navigation
+ellipsizeModeType | "head" | The omission of words,including "tail","clip","head","middle"
+leftButton | | Navigation custom left area content
+rightButton| | Navigation custom right area content
+style| | Custom style
 
 
 ## Usage
@@ -41,8 +52,6 @@ import RNEasyTopNavBar from 'react-native-easy-top-nav-bar';
 
 // TODO: What to do with the module?
 RNEasyTopNavBar;
-
-
 
 
 
