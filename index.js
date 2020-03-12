@@ -12,10 +12,12 @@ export default class RNEasyTopNavBar extends Component{
         rightButton: PropTypes.element,
         titleColor: PropTypes.string,
         backgroundTheme: PropTypes.string,
+        ellipsizeModeType: PropTypes.string,
     }
     static defaultProps = {
         titleColor: '#fff',
         backgroundTheme: '#999',
+        ellipsizeModeType:'head',
         statusBar: {
             barStyle: 'light-content',
             hidden: false,
@@ -30,28 +32,28 @@ export default class RNEasyTopNavBar extends Component{
     }
     render() {
         let statusBar = !this.props.statusBar.hidden?
-    <View>
-        <StatusBar
-        {...this.props.statusBar}
-        />
-        </View> : null
-        let titleView = <Text ellipsizeMode="head" numberOfLines={1} style={[styles.title, {color: this.props.titleColor}]}>
-        {this.props.title}
-    </Text>
-        let content = <View style={styles.navBar}>
-            {this.getButtonElement(this.props.leftButton)}
-            <View style={styles.navBarTitle}>
-            {titleView}
-            </View>
-        {this.getButtonElement(this.props.rightButton)}
-    </View>
+        <View>
+            <StatusBar
+            {...this.props.statusBar}
+            />
+            </View> : null
+            let titleView = <Text ellipsizeMode={this.props.ellipsizeModeType} numberOfLines={1} style={[styles.title, {color: this.props.titleColor}]}>
+            {this.props.title}
+        </Text>
+            let content = <View style={styles.navBar}>
+                {this.getButtonElement(this.props.leftButton)}
+                <View style={styles.navBarTitle}>
+                {titleView}
+                </View>
+            {this.getButtonElement(this.props.rightButton)}
+        </View>
         return(
             <SafeAreaView style={{backgroundColor: this.props.backgroundTheme, width: '100%'}}>
-    <View style={[this.props.style, {backgroundColor: this.props.backgroundTheme}]}>
-        {statusBar}
-        {content}
-    </View>
-        </SafeAreaView>
+                <View style={[this.props.style, {backgroundColor: this.props.backgroundTheme}]}>
+                    {statusBar}
+                    {content}
+                </View>
+            </SafeAreaView>
     )
     }
 }
