@@ -1,6 +1,8 @@
 
 # react-native-easy-top-nav-bar
 
+
+
 ## Getting started
 
 `$ npm install react-native-easy-top-nav-bar --save`
