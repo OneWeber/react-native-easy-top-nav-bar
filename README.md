@@ -41,5 +41,9 @@ import RNEasyTopNavBar from 'react-native-easy-top-nav-bar';
 
 // TODO: What to do with the module?
 RNEasyTopNavBar;
-```
-  
+
+
+eg: "_________" 左右两边到":"决定文字到对齐方式
+| Property         |  Default         | Description
+
+
