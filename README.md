@@ -33,6 +33,43 @@
   	```
       compile project(':react-native-easy-top-nav-bar')
   	```
+    
+## Show some message    
+  ```js
+  import React, {Component} from 'react';
+  import {
+    View,
+    Text,
+  } from 'react-native';
+  import RNEasyTopNavBar from 'react-native-easy-top-nav-bar';
+  class EasyBar extend Component{
+  getLeftButton() {
+    return <View>
+      <Text style={{color: '#fff'}}>back</Text>
+    </View>
+  }
+  getRightButton() {
+    return <View>
+      <Text style={{color: '#fff'}}>more</Text>
+    </View>
+  }
+    render() {
+      return(
+        <View style={{flex: 1}}>
+           <RNEasyTopNavBar
+            title={'this is title'}
+            backgroundTheme={'#008489'}
+            leftButton={this.getLeftButton()}
+            rightButton={this.getRightButton()}
+            ellipsizeModeType={'tail'}
+        />
+        </View>
+      )
+    }
+  }
+```  
+    
+    
 ## Props
 
 Property | Default | Description
