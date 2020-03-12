@@ -2,6 +2,7 @@
 # react-native-easy-top-nav-bar
 
 ![GitHub set up](https://github.com/OneWeber/react-native-easy-top-nav-bar/raw/master/img/git1.jpg)
+![GitHub set up](https://github.com/OneWeber/react-native-easy-top-nav-bar/raw/master/img/navdialog.jpg)
 
 ## Getting started
 
